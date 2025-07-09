@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: EmailService
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: himanshu.rajroxx@gmail.com
+    password: ogichjgzseqdhvju
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 10000
+          timeout: 10000
+        debug: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 4002
